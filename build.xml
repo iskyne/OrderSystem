@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="OrderSystem" basedir=".">
+  <path id="classpath">
+    <fileset dir="E:\IskyneWorkSpace\Java\工具jar\JiBx\jibx\lib" includes="*.jar"/>
+    <pathelement location="bin"/>
+  </path>
+	<target name="bindGen">
+		<echo message="bind gen"/>
+		<java classpathref="classpath" fork="true" failonerror="true" classname="org.jibx.binding.generator.BindGen">
+			<arg value="-s"/>
+			<arg value="E:\IskyneWorkSpace\MyEclipse\OrderSystem\src\biz"/>
+			<arg value="biz.Order"/>
+		</java>
+	</target>
+</project>
